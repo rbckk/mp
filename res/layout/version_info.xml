@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >   
+ <RelativeLayout
+      android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	>
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/icon" />
+     <TextView 
+        android:id="@+id/app_version"
+        android:layout_below="@+id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 		android:layout_centerHorizontal="true"
+        android:textSize="20dip"
+        android:textColor="@color/c_ff4d4e49"
+        />
+
+       </RelativeLayout>
+   <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginRight="40.0dip"
+            android:layout_gravity="bottom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="7dip"
+                android:paddingRight="7dip"
+                android:text="Copyright 2014 EMBA社交平台"
+                android:textSize="13sp" />
+
+        </FrameLayout>
+</FrameLayout>

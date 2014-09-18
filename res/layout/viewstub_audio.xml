@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/attachment_audio_panel"
+		    android:layout_width="wrap_content"
+		    android:layout_height="60dip"
+		    android:orientation="vertical"
+		    >
+		    <RelativeLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        >
+	         <ImageView
+	            android:id="@+id/audio_panel" 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="50dip"
+	        	android:layout_marginLeft="10dip"
+	            android:src="@drawable/audio_0"   />
+		      <TextView 
+		           android:id="@+id/audio_time"
+		           android:layout_width="wrap_content"
+		           android:layout_height="60dip"
+		           android:layout_marginLeft="40dip"
+		           android:layout_marginTop="18dip"
+		           android:textSize="10dip"
+		            />
+		   </RelativeLayout>
+</LinearLayout>
+

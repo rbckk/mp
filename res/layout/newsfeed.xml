@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/v5_0_1_flipper_head_blue_background"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/newsfeed_flip"
+                android:layout_width="54dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/v5_0_1_flipper_head_flip" />
+
+            <ImageView
+                android:layout_width="2px"
+                android:layout_height="24dip"
+                android:layout_gravity="center"
+                android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+            <RelativeLayout
+                android:id="@+id/newsfeed_mode_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+              
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/newsfeed_mode_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="ByTime"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/newsfeed_mode_text"
+                    android:layout_margin="5dip"
+                    android:src="@drawable/v5_0_1_flipper_head_title_corner" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/newsfeed_camera"
+                android:layout_width="54dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/v5_0_1_flipper_head_camera" 
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/newsfeed_status"
+                android:layout_width="54dip"
+                android:layout_height="fill_parent"
+             
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/v5_0_1_flipper_head_status" />
+
+            <ImageView
+                android:id="@+id/newsfeed_checkin"
+                android:layout_width="54dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/v5_0_1_flipper_head_title_wrapper_background"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/v5_0_1_flipper_head_checkin"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:background="@drawable/user_homepage_background"
+            android:layout_weight="1" >
+
+            <com.mp.android.pullview.PullListView
+                android:id="@+id/newsfeed_display"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/user_homepage_background"
+          		android:dividerHeight="10dip"
+          		android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:listSelector="#00000000" />
+
+            <com.mp.android.pullview.PullListView
+                android:id="@+id/piazza_display"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/user_homepage_background"
+          		android:dividerHeight="10dip"
+          		android:layout_marginLeft="0dip"
+                android:layout_marginRight="0dip"
+                android:listSelector="#00000000"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/newsfeed_nodisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/newsfeed_nodisplay_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/v5_0_1_abslistview_empty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newsfeed_nodisplay_img"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dip"
+                android:text="暂时没有内容"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/newsfeed_progressbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore">
+        <ignore path="res\layout\user.xml" />
+    </issue>
+    <issue id="ExportedActivity" severity="ignore" />
+    <issue id="ManifestOrder" severity="ignore" />
+    <issue id="UselessParent">
+        <ignore path="res\layout\user.xml" />
+    </issue>
+</lint>

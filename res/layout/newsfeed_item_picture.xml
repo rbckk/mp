@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/meeting_background_above" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/meeting_background_middle"
+        android:paddingBottom="5dip" >
+
+    <ImageView
+        android:id="@+id/newsfeed_list_avatar"
+        android:layout_width="42dip"
+        android:layout_height="42dip"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dip"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/v5_0_1_widget_default_head" />
+        
+    <TextView
+        android:id="@+id/newsfeed_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/newsfeed_list_avatar"   
+        android:layout_marginRight="5dip"
+        android:layout_marginTop = "10dp"      
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    
+    <TextView
+        android:id="@+id/newsfeed_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom ="@+id/newsfeed_list_name"
+        android:layout_marginRight="7dp"   
+        android:textColor="#ff888888"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/newsfeed_list_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newsfeed_list_name"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_below="@+id/newsfeed_list_name"
+        android:textColor="#ff555555"
+        android:textSize="16sp"
+        android:layout_marginTop = "4dp"
+        />
+    
+	<LinearLayout 
+	    android:id="@+id/attachment_panel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newsfeed_list_name"
+        android:layout_below="@id/newsfeed_list_content" 
+        android:layout_marginRight="10dip"
+        android:orientation="vertical"   
+	    >
+       <ViewStub 
+           android:id="@+id/viewStub_img_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="10dip"
+           android:layout="@layout/viewstub_img"
+           />
+    
+     	<ViewStub
+        android:id="@+id/viewStub_audio_id"
+        android:layout_width="wrap_content"
+	    android:layout_height="60dip"
+	    android:layout_marginTop="10dip"
+	    android:layout="@layout/viewstub_audio"
+	   >
+	    
+    </ViewStub>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/ad_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newsfeed_list_name"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_below="@+id/attachment_panel"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:layout_marginTop = "4dp"
+        android:background="#ff555555"
+        android:visibility="gone"
+        />     
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/messages_card_background_below"
+        android:orientation="horizontal" >
+
+        <ImageView
+        	android:id="@+id/zhuanfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/web_browser_icon_share" />
+
+        <ImageView
+        	android:id="@+id/downloadcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dip"
+            android:src="@drawable/web_browser_icon_refresh" />
+    </RelativeLayout>
+
+</LinearLayout>

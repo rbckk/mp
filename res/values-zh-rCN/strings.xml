@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+ * MUSTARD: Android's Client for StatusNet
+ * 
+ * Copyright (C) 2009-2012 macno.org, Michele Azzolari
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ * 
+ */
+  -->
+
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="hello">Hello World, RenRenActivity!</string>
+    <!--<string name="app_name">Mustard</string>  -->
+    <string name="app_name">EMBA社交</string>
+    <string name="template_user_agent">%1$s/%2$s (Linux; Android)</string>
+    <string name="no_dents">没有发现消息;</string>
+    <string name="title">标题</string>
+    <string name="status">想什么呢？</string>
+    <string name="update">发送</string>
+    <string name="upload">上传</string>
+    
+
+    <string name="enable_update_location">发送位置信息？</string>
+    <string name="confirm">确认</string>
+    <string name="confirm_fav">添加到收藏</string>
+    <string name="error_fav">添加到收藏出错</string>
+    <string name="confirm_unfav">从收藏中移除</string>
+    <string name="error_unfav">从收藏中移除出错</string>
+    <string name="confirm_repeat">信息已回推</string>
+    <string name="error_repeat">回推消息出错，禁用新模式</string>
+
+    <string name="confirm_sub">订阅</string>
+    <string name="error_sub">订阅出错</string>
+    <string name="confirm_unsub">取消订阅</string>
+    <string name="error_unsub">取消订阅出错</string>
+    <string name="confirm_block">阻止</string>
+    <string name="error_block">阻止出错</string>
+    <string name="confirm_unblock">Unblocked</string>
+    <string name="error_unblock">Error unblocking %s</string>
+    <string name="confirm_join">加入</string>
+    <string name="error_join">加入群组出错</string>
+    <string name="confirm_leave">离开</string>
+    <string name="error_leave">离开群组出错</string>
+
+    <string name="error_generic">抱歉，出现未知错误</string>
+    <string name="error_generic_detail">抱歉，出现以下未知错误\n%s</string>
+    <string name="error_title_no_network">没有网络链接</string>
+    <string name="error_no_network">由于网络链接问题，无法发布消息</string>
+    <string name="error_no_attachment_supported">StatusNet 服务正常但是不支持附件</string>
+    <string name="error_no_dents_from">获取回复和收藏时出错</string>
+    <!-- <string name="error_http_not_acceptable">Server replied with "Not acceptable". Check your notice</string>  -->
+    
+    <string name="warning_text_too_long">That\'s too long. Max notice size is %s chars. Would you continue anyhow?</string>
+
+    <string name="msg_logout">确定注销此账号？</string>
+    <string name="warning_attachment_too_long">Attachment is too big. Max attachement size is %s bytes.</string>
+    <string name="msg_unauth">There is a problem with stored credentials. Please reauthorize mustard! Proceed?</string>
+    <string name="msg_confirm_repeat">Repeat this notice?</string>
+    <string name="msg_confirm_block">Block this user?</string>
+    <string name="msg_confirm_unblock">Unblock this user?</string>
+    <string name="msg_welcome">您好%s!\n 愿意跟随 @mustard 么？</string>
+    <string name="title_welcome">欢迎！</string>
+    <string name="welcome_label">欢迎 %s ！</string>
+    <string name="title_bookmarks">书签</string>
+    <string name="title_directmessages">Direct Messages</string>
+    <string name="dm_in">Inbox</string>
+    <string name="dm_out">Outbox</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="warning">警告</string>
+    <string name="error">错误</string>
+    <string name="error_no_oauth">"
+很抱歉，%s 不支持 OAuth 。
+请发送电邮至 mustard@macno.org
+    "
+    </string>
+    <string name="identica">Identica</string>
+    <string name="statusnet">Status Net</string>
+    <string name="twitter">Twitter</string>
+    <string name="oauth_wrong_consumer_key">获取私钥错误，请告知 mustard@macno.org</string>
+	<string name="show">显示</string>
+	<string name="hide">隐藏</string>
+	<string name="shorturl">Short URL!</string>
+	<string name="close">关闭</string>
+    <string name="always_ask">一直询问</string>
+    <string name="always_sent">发送而不再询问</string>
+    
+    <!-- mustard -->
+    <string name="username">账户</string>
+    <string name="password">密码</string>
+    <string name="instance">地址</string>
+	<string name="label_force_ssl">强制使用 TLS/SSL</string>
+    <string name="new_password">设置新密码</string>
+	<string name="new_password_hint">请输入您的新密码</string>
+	<string name="new_password_info">此功能用于更改密码</string>	
+	
+    <string name="lbl_search">输入搜索关键词</string>
+    <string name="lbl_search_type">搜索：</string>
+
+	<string name="lbl_update_password">确认</string>
+	<string name="lbl_update_avatar">更换头像</string>
+	
+	<string name="lbl_create_account">New account</string>
+	<string name="lbl_oauth_login">OAuth login</string>
+	<string name="lbl_account_login">Username login</string>
+	
+	<string name="btn_login">登入</string>
+	<string name="btn_login_oauth">点击图片来使用 OAuth (如果可用！)</string>
+    <string name="btn_search">查找</string>
+    <string name="btn_squeeze">缩小</string>
+    <string name="btn_test">测试！</string>
+    <string name="btn_continue">继续</string>
+    <string name="btn_filter_settings">Filter Settings</string>
+    <string name="btn_clear_settings">Clear database and images</string>
+    <string name="search_users">用户</string>
+    <string name="search_groups">群组</string>
+    <string name="search_notices">消息</string>
+    <string name="search_tags">标签</string>
+    <string name="wait_please">"Wait please"</string>
+    <string name="done">Done!</string>
+    <string name="user_following">Following: %s</string>
+    <string name="user_follower">Followers: %s</string>
+    <string name="user_dents">Dents: %s</string>
+    <string name="user_since">Member since: %s</string>
+    
+    <string name="send_from_account">Send using:</string>
+    <string name="im_no_nework">网络异常，无法发送消息，请重新登录！</string>
+    <!--  INFO MESSAGES -->
+    <string name="info_no_dents">没有发现消息</string>
+    <string name="restart_take_effect">更改密码后您需要重新登录。</string>
+    
+    <string name="to">To</string>
+    <string name="text">Text</string>
+    <string name="send">Send</string>
+    <string name="warning_leave_group">您确定要离开 </string>
+    <string name="new_dm">Compose</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+   	<string name="pref_multi_account_on_post">Choose account while posting?</string> 
+    
+    <!-- ERROR MESSAGES -->
+    <string name="error_fetch_dents">
+    "
+获取消息出错。请稍等后重试。"
+    </string>
+    <string name="error_fetch_more_dents">抱歉，该页面不支持更多功能..</string>
+    <string name="error_group_not_found">抱歉，群组 %s 不存在</string>
+    <string name="error_user_not_found">抱歉，用户 %s 不存在</string>
+    <string name="error_no_user_from_status">无法从 API 获取用户</string>
+    <string name="error_no_notice_from_status">无法从 API 获取消息</string>
+    <string name="error_detecting_locaton">无法获取位置信息</string>
+    <string name="no_locaton_provider">没有启用位置信息提供设备</string>
+    <string name="error_duplicate_account">该账户已存在</string>
+    <string name="error_invalid_url">地址不正确</string>
+    <string name="error_help_test">网络异常，无法登陆！</string>
+    <string name="error_no_response">没有回复</string>
+    <string name="error_empty_response">空回复</string>
+    <string name="error_wrong_userpass">错误的用户名或密码</string>
+    <string name="error_instance_unkown_version">%1$s 似乎使用了古旧的 StatusNet，需要 %2$s</string>
+    <string name="error_instance_too_old_version">版本 %1$s 太古老了。需要 %2$s</string>
+    
+    <!-- 
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+ -->
+    <!-- MENU -->
+    <string name="menu_timeline">时链</string>
+    <string name="menu_insert">新的消息</string>
+    <string name="menu_delete">删除</string>    
+    <string name="menu_forward">回推</string>
+    <string name="menu_reply">回复</string>
+    <string name="menu_repeat">Repeat</string>
+    <string name="menu_sub">订阅</string>
+    <string name="menu_unsub">取消订阅</string>
+    <string name="menu_block">阻止</string>
+    <string name="menu_unblock">Unblock</string>
+    <string name="menu_view_geo">查看位置</string>
+	<string name="menu_share">Share</string>
+	<string name="menu_copy2clipboard">Copy notice\'s URL</string>
+    <string name="menu_fav">收藏</string>
+    <string name="menu_unfav">取消收藏</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_public">公开时链</string>
+    <string name="menu_dm">Direct Messages</string>
+    <string name="menu_user_tl">用户时链</string>
+    <string name="menu_favorites">收藏</string>
+    <string name="menu_mentions">回复</string>
+    <string name="menu_logout">登出</string>
+    <string name="menu_switch">切换账户</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_back">返回</string>
+    <string name="menu_choose_account">选择一个账户</string>
+    <string name="menu_add_new">添加新的</string>
+    <string name="menu_remove_account">Remove account</string>
+    <string name="menu_friends">个人时链</string>
+    <string name="menu_avatar">上传头像</string>
+    <string name="menu_account_settings">Account Settings</string>
+    <string name="menu_oauth_settings">OAuth 设置</string>
+    <string name="menu_settings">设置 </string>
+    <string name="menu_bookmarks">书签</string>
+    <string name="menu_hide">Hide in main timeline</string>
+    <string name="menu_unhide">Unhide in main timeline</string>
+    <string name="menu_ignore_hide">Show hidden</string>
+    <string name="menu_unignore_hide">Don\'t show hidden</string>
+    <string name="menu_bookmark_this_page">将此页加入书签</string>
+    <string name="menu_account">更多...</string>
+	<string name="menu_join">加入</string>
+	<string name="menu_leave">离开</string>
+	<string name="menu_conversation">Conversation</string>
+	<string name="menu_view_attachment">Attachments</string>
+	
+	<string name="alert_merge_account_title">Select accounts to merge</string>
+    <string name="msg_delete_bookmark">您确定要删除此书签？</string>
+    <string name="msg_delete_filter">Are you sure you want to delete this filter?</string>
+    <string name="timeline_public">公开时链</string>
+    <string name="timeline_main">您和您的朋友们</string>
+    <string name="timeline_friends">%s 和 TA 的朋友们</string>
+
+	<string name="copied_to_clipboard">Notice\'s URL copied to clipboard</string>
+    <string name="about_title">关于 mustard</string>
+    <string name="select_file">选择附件文件</string>
+
+	<string name="w_tag_title">标示为 #%s 的标签</string>
+	<string name="w_search_title">搜索 %s</string>
+    
+    <string name="status_update_ok">消息已发布！</string>
+    <string name="status_update_ko_title">发布出错</string>
+    <string name="status_update_ko">发布您的消息时出现问题...</string>
+
+    <string name="avatar_update_ok">头像已上传</string>
+    <string name="avatar_update_ko">上传您的头像时出现问题...</string>
+    <string name="avatar_resize_ko">缩放您的头像时出现问题...</string>
+	<string name="please_wait_fetching_dents">
+"
+获取消息中...
+请稍候...
+"
+	</string>
+	<string name="please_wait_resizing">
+"
+请稍等...
+"
+	</string>
+	<string name="please_wait_updating_dent">
+"
+Posting notice&#8230;
+Please wait&#8230;
+"	
+	</string>
+	<string name="contacting_site">联系站点...</string>
+	<string name="authenticating_account">认证账户...</string>
+	<string name="please_wait_opening">载入...</string>
+	<string name="please_wait">Please, wait..</string>
+	<!-- Preferences -->
+	<string name="preferences_timeline">时链</string>
+	
+	<string name="pref_merge_timeline_title">Merge timelines</string>
+	<string name="pref_merge_timeline_summary">Choose which accounts to merge into main timeline</string>
+	<string name="pref_rows_fetch_default">25</string>
+	<string name="pref_rows_fetch_title">获取的消息数</string>
+	<string name="pref_rows_fetch_summary">该选项允许设定获取的消息数</string>
+	<string name="pref_rows_fetch_dialog_title">消息数</string>
+	
+	<string name="preferences_notifications">提醒</string>
+	<string name="pref_check_updates_title">启用提醒</string>
+    <string name="pref_check_updates_summary">当程序未运行时查看是否有提到自己的消息</string>
+    <string name="pref_check_updates_interval_title">更新查看间隔</string>
+    <string name="pref_check_updates_interval_summary">查看间隔的时间</string>
+    <string name="pref_check_updates_interval_dialog_title">间隔分钟数</string>
+    <string name="pref_check_updates_interval_default">60</string>
+    <string name="vibrate_title">Vibrate?</string> 
+    <string name="vibrate_summary">Vibrate the phone when new mentions arrive</string> 
+    <string name="pref_ringtone_title">Ringtone?</string> 
+    <string name="pref_ringtone_summary">Ringtone to use when new mentions arrive</string>
+    
+	<string name="preferences_geolocation">地理位置信息</string>
+	<string name="pref_enable_geo_title">启用地理位置信息？</string>
+    <string name="pref_enable_geo_summary">当发送消息时附加地理位置信息</string>
+
+	<string name="pref_geo_mode_title">模式</string>
+	<string name="pref_geo_mode_summary">一直发送位置信息或者在发送时决定</string>
+	<string name="pref_geo_mode_dialog_title">选择</string>    
+	<string name="pref_geo_mode_default">@string/always_ask</string>
+
+	<string name="pref_theme_title">Theme</string>
+	<string name="pref_theme_summary">Select a theme (needs restart)</string>
+	<string name="pref_theme_dialog_title">Select</string>  
+	
+	<string name="pref_geo_fuzzy_title">精度</string>
+	<string name="pref_geo_fuzzy_summary">精确到公里</string>
+	<string name="pref_geo_fuzzy_dialog_title">半径(公里)</string>
+	<string name="pref_geo_fuzzy_default">10</string>
+
+	<string name="preferences_general">一般</string>
+	<string name="pref_new_repeat_title">新的回推模式？</string>
+    <string name="pref_new_repeat_summary">启用新的回推 API</string>
+    <string name="pref_show_nick_reply_title">Include nickname in reply?</string>
+    <string name="pref_show_nick_reply_summary">Include author nickname in replies</string>
+	<string name="pref_refresh_after_post_title">发布后刷新？</string>
+	<string name="pref_refresh_after_post_summary">如果启用，发布消息后将刷新时链</string>
+	<string name="pref_auto_refresh_title">自动刷新时链？</string>
+	<string name="pref_auto_refresh_summary">如果启用，时链将自动刷新</string>
+	
+	<string name="pref_spamreport_on_block">Report spammer after Block?</string>
+	<string name="pref_spamreport_on_block_summary">If enabled, after blocking a user a spamreport is generated (only on identi.ca)</string>
+	
+	<string name="pref_auto_refresh_interval_default">60</string>
+
+	<string name="preferences_optional">选项</string>
+	<string name="pref_send_snapshot_title">启用快照</string>
+    <string name="pref_send_snapshot_summary">您可以发送包含您使用账户数的匿名信息</string>
+
+	<string name="preferences_layout">Layout (Restart mustard to take effect)</string>
+	
+	<string name="pref_legacy_layout_title">W/B Theme</string>
+    <string name="pref_legacy_layout_summary">White on black theme.</string>
+
+	<string name="pref_new_button_title">Status Buttons?</string>
+    <string name="pref_new_button_summary">Enable button to access status related functions (reply,repeat etc)</string>
+
+	<string name="pref_font_size_title">Font size</string>
+    <string name="pref_font_size_summary">Choose the font size</string>
+
+	<string name="pref_bottom_buttons_title">Quick buttons</string>
+    <string name="pref_bottom_buttons_summary">Enable onscreen buttons (compose, refresh, mentions)</string>
+
+	<string name="pref_compact_view_title">Compact view</string>
+    <string name="pref_compact_view_summary">Enable notice\'s compact view </string>
+
+	<string name="pref_show_context_title">Show context link</string>
+    <string name="pref_show_context_summary">Always show context link inline</string>
+
+	<string name="pref_url_shortener_title">URL shortener</string>
+    <string name="pref_url_shortener_summary">Choose the URL shortener</string>
+	<string name="url_shortener">URL shortener</string>
+
+    <string name="new_notices_updates">Mustard mentions</string>
+    <string name="x_new_mention">There are new replies</string>
+    <string name="x_single_account_mention">You have a new mention</string>
+    <string name="x_single_account_mentions">You have %s new mentions</string>
+    <string name="x_multiple_account_mention">%s has a new mention</string>
+    <string name="x_multiple_account_mentions">%1$s has %2$s new mentions</string>
+    <string name="x_multiple_accounts_mentions">Your accounts have %s new mentions</string>
+    <string name="x_new_mentions">{0}新消息</string>
+	<string name="geo_view_on">查看 %s</string>
+	<string name="geo_title">地理位置信息</string>
+	<string name="geo_from">消息发送自 %s</string>
+	
+	<string name="lbl_oauth_refresh_keys">检查新的 Mustard OAuth 公钥</string>
+	<string name="btn_oauth_refresh_keys_value">刷新</string>
+	<string name="lbl_oauth_new_keys">输入 URL 来获得你的私钥(访问 http://mustard.macno.org/oauth)</string>
+	<string name="btn_oauth_new_keys_value">获取</string>
+
+	<string name="lbl_global_settings">全局设置</string>
+	<string name="lbl_oauth_settings">OAuth 设置</string>
+
+	<string name="lbl_settings">PhiStatus 设置</string>
+	<string name="lbl_account_new">Add new account</string>
+	<string name="lbl_account_type">Select microblog service</string>
+	<string name="lbl_filters">Mustard Filters</string>
+	<string name="lbl_add">Add</string>
+	
+	<string name="font_size">Font size</string>
+	<string name="small">Small</string>
+	<string name="medium">Medium</string>
+	<string name="large">Large</string>
+	
+	<string name="from">来自:</string>
+	<string name="show_conversation">in context</string>
+	
+	<string name="pref_theme_layout_title">Theme</string>
+    <string name="pref_theme_layout_summary">Choose your preferred theme.</string>
+	
+	<string name="theme">Theme</string>
+	<string name="theme_bw">White on Black</string>
+	<string name="theme_gb">Grey bubble</string>
+	
+	<string name="repeated_by">RT by</string>
+	 <string name="im_connect_fail">聊天服务器链接失败！</string>
+	<string name="im_connect_ok">聊天服务器链接成功！</string>
+	<!-- Dates -->
+	<string name="few_seconds">刚刚</string>
+	<string name="one_minute_ago">"1 分钟前"</string>
+	<string name="minutes_ago">"%1$s分钟前"</string>
+	<string name="one_hour_ago">"1 小时前"</string>
+	<string name="hours_ago">"%1$s小时前"</string>
+	<string name="one_day_ago">"1天前"</string>
+	<string name="days_ago">" %1$s天前"</string>
+	<string name="one_month_ago">"1个月前"</string>
+	<string name="months_ago">"%1$s个月前"</string>
+	<string name="one_year_ago">"1年前"</string>
+	
+	 <string name="about_message">
+    "
+mustard %s is a µblogging client for StatusNet Software developed by @macno
+
+Thanks to @BUGabundo, @stav, @fabsh and others for their suggestions.
+Also thanks to !sni team for their support.
+
+This software is dedicated to my beloved son Filippo.
+
+Contributors:
+@brionv
+@shiny@shiny.status.net
+@ciarang@micro.ciarang.com
+@grote
+@jbfavre@status.jbfavre.org
+Josef Hahn
+ 
+Graphics:
+@fabsh
+@0x6d686b
+
+Translations:
+German by @eike, @jancborchardt
+Italian by @macno
+French by @stemp, @jpec
+Portuguese by @apf, @BUGabundo
+Dutch by @sandersch
+Norvegian by @hz
+Chinese by @lovenemesis
+Spanish by @jjardon
+Polish by @blogoo.pl
+Russian by @dothidden
+
+"
+    </string>
+    <!-- add by xiaosong.xu@phicomm.com.cn -->
+    <string name="mustardoauthkeyurl">mustardoauthkeyurl</string>
+    <string name="twitpic">twitpic</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    
+    <string name="globalSetting">全局设置</string>
+    <string name="accountSetting">个人账户设置</string>
+    <string name="clearData">清理所有数据</string>
+    <string name="exitAccount">退出登录</string>
+
+    <string name="not_read_message">未读消息</string>
+	<string name="alert_dialog_title">温馨提示</string>
+	<string name="alert_dialog_content">清除所有未读消息吗？</string>
+	<string name="button_ok">确认</string>
+	<string name="button_cancel">取消</string>
+	<string name="message_from">   来自:</string>
+	<string name="account_name">社交帐号：</string>
+	
+	<string name="new_publish">发布新鲜事</string>
+	<string name="input_null">您还未输入内容，请输入后重试！</string>
+	<string name="add_location">添加地点</string>
+	<string name="locationing">正在定位...</string>
+	<string name="no_function">暂时无法提供此功能！</string>
+	<string name="publish_ok">发布成功</string>
+	<string name="publish_too_more">状态更新过于频繁</string>
+	<string name="publish_too_long">状态字数超过限定长度</string>
+	<string name="publish_illegal">状态的内容含有非法字符</string>
+	<string name="publish_cancel">是否取消发布？</string>
+	<string name="publishing">正在发布</string>
+	<string name="upload_picture">上传照片</string>
+	<string name="from_cammera">拍照上传</string>
+	<string name="from_local">本地上传</string>
+
+	
+	
+    <string name="app_widget2x2">便签2x2</string>
+    <string name="app_widget4x4">便签4x4</string>
+    <string name="widget_havenot_content">没有关联内容，点击新建便签。</string>
+    <string name="widget_under_visit_mode">访客模式下，便签内容不可见</string>
+    <string name="notelist_string_info">...</string>
+    <string name="notelist_menu_new">新建便签</string>
+    <string name="delete_remind_time_message">成功删除提醒</string>
+    <string name="set_remind_time_message">创建提醒</string>
+    <string name="note_alert_expired">已过期</string>
+    <string name="format_date_ymd">yyyyMMdd</string>
+    <string name="format_datetime_mdhm">MM月dd日 kk:mm</string>
+    <string name="notealert_ok">知道了</string>
+    <string name="notealert_enter">查看</string>
+    <string name="note_link_tel">呼叫电话</string>
+    <string name="note_link_email">发送邮件</string>
+    <string name="note_link_web">浏览网页</string>
+    <string name="note_link_other">打开地图</string>
+    <!-- note list string -->
+    <string name="menu_create_folder">新建文件夹</string>
+    <string name="menu_export_text">导出文本</string>
+    <string name="menu_sync">同步</string>
+    <string name="menu_sync_cancel">取消同步</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_move">移动到文件夹</string>
+    <string name="menu_select_title">选中了 %d 项</string>
+    <string name="menu_select_none">没有选中项，操作无效</string>
+    <string name="menu_select_all">全选</string>
+    <string name="menu_deselect_all">取消全选</string>
+    <string name="menu_font_size">文字大小</string>
+    <string name="menu_font_small">小</string>
+    <string name="menu_font_normal">正常</string>
+    <string name="menu_font_large">大</string>
+    <string name="menu_font_super">超大</string>
+    <string name="menu_list_mode">进入清单模式</string>
+    <string name="menu_normal_mode">退出清单模式</string>
+    <string name="menu_folder_view">查看文件夹</string>
+    <string name="menu_folder_delete">刪除文件夹</string>
+    <string name="menu_folder_change_name">修改文件夹名称</string>
+    <string name="folder_exist">文件夹 %1$s 已存在，请重新命名</string>
+    <string name="menu_send_to_desktop">发送到桌面</string>
+    <string name="menu_alert">提醒我</string>
+    <string name="menu_remove_remind">删除提醒</string>
+    <string name="menu_title_select_folder">选择文件夹</string>
+    <string name="menu_move_parent_folder">上一级文件夹</string>
+    <string name="info_note_enter_desktop">已添加到桌面</string>
+    <string name="alert_title_delete">删除</string>
+    <string name="alert_message_delete_notes">确认要删除所选的 %d 条便签吗?</string>
+    <string name="alert_message_delete_note">确认要删除该条便签吗?</string>
+    <string name="alert_message_delete_folder">确认删除文件夹及所包含的便签吗？</string>
+    <string name="format_move_notes_to_folder">已将所选 %1$d 条便签移到 %2$s 文件夹</string>
+    <!-- export text -->
+    <string name="error_sdcard_unmounted">SD卡被占用，不能操作</string>
+    <string name="error_sdcard_export">导出文本时发生错误，请检查SD卡</string>
+    <string name="error_note_not_exist">要查看的便签不存在</string>
+    <string name="error_note_empty_for_clock">不能为空便签设置闹钟提醒</string>
+    <string name="error_note_empty_for_send_to_desktop">不能将空便签发送到桌面</string>
+    <string name="success_sdcard_export">导出成功</string>
+    <string name="failed_sdcard_export">导出失败</string>
+    <string name="format_exported_file_location">已将文本文件(%1$s)输出至SD卡(%2$s)目录</string>
+    <!-- Sync -->
+    <string name="ticker_syncing">同步便签...</string>
+    <string name="ticker_success">同步成功</string>
+    <string name="ticker_fail">同步失败</string>
+    <string name="ticker_cancel">同步已取消</string>
+    <string name="success_sync_account">与%1$s同步成功</string>
+    <string name="error_sync_network">同步失败，请检查网络和帐号设置</string>
+    <string name="error_sync_internal">同步失败，发生内部错误</string>
+    <string name="error_sync_cancelled">同步已取消</string>
+    <string name="sync_progress_login">登录%1$s...</string>
+    <string name="sync_progress_init_list">正在获取服务器便签列表...</string>
+    <string name="sync_progress_syncing">正在同步本地便签...</string>
+    <!-- Preferences -->
+    <string name="preferences_title">设置</string>
+    <string name="preferences_account_title">同步账号</string>
+    <string name="preferences_account_summary">与google task同步便签记录</string>
+    <string name="preferences_last_sync_time">上次同步于 %1$s</string>
+    <string name="preferences_add_account">添加账号</string>
+    <string name="preferences_menu_change_account">更换账号</string>
+    <string name="preferences_menu_remove_account">删除账号</string>
+    <string name="preferences_menu_cancel">取消</string>
+    <string name="preferences_button_sync_immediately">立即同步</string>
+    <string name="preferences_button_sync_cancel">取消同步</string>
+    <string name="preferences_dialog_change_account_title">当前帐号 %1$s</string>
+    <string name="preferences_dialog_change_account_warn_msg">如更换同步帐号，过去的帐号同步信息将被清空，再次切换的同时可能会造成数据重复</string>
+    <string name="preferences_dialog_select_account_title">同步便签</string>
+    <string name="preferences_dialog_select_account_tips">请选择google帐号，便签将与该帐号的google task内容同步。</string>
+    <string name="preferences_toast_cannot_change_account">正在同步中，不能修改同步帐号</string>
+    <string name="preferences_toast_success_set_accout">同步帐号已设置为%1$s</string>
+    <string name="preferences_bg_random_appear_title">新建便签背景颜色随机</string>
+    <string name="button_delete">删除</string>
+    <string name="call_record_folder_name">通话便签</string>
+    <string name="hint_foler_name">请输入名称</string>
+    <string name="search_label">正在搜索便签</string>
+    <string name="search_hint">搜索便签</string>
+    <string name="search_setting_description">便签中的文字</string>
+    <string name="search">便签</string>
+    <string name="datetime_dialog_ok">设置</string>
+    <string name="datetime_dialog_cancel">取消</string>
+    <plurals name="search_results_title">
+        <item quantity="other"><xliff:g id="NUMBER">%1$s</xliff:g> 条符合“<xliff:g id="SEARCH">%2$s</xliff:g>”的搜索结果</item>
+    </plurals>
+
+
+    <string name="perm_label">"启动即时消息服务"</string>
+    <string name="perm_desc">"允许应用程序通过 intent 启动即时消息服务。"</string>
+    <string name="ro_perm_label">"阅读即时消息"</string>
+    <string name="ro_perm_desc">"允许应用程序从即时消息内容提供者处读取数据。"</string>
+    <string name="wo_perm_label">"撰写即时消息"</string>
+    <string name="wo_perm_desc">"允许应用程序向即时消息内容提供者写入数据。"</string>
+    <string name="im_main_title">即时通讯</string>
+    <string name="im_main_cue">赶快点击右上角添加联系人聊天吧</string>
+    <string name="im_select_contact_title">选择联系人</string>
+    
+    <string name="record_down">按住说话</string>
+    <string name="record_up">松开发送</string>
+    <string name="record_shord">时间过短</string>
+    
+    
+    <string name="yesterday">昨天</string>
+    
+    <string name="im_offline">离线</string>
+    <string name="im_online">在线</string>
+    
+    <string name ="audio_file">语音文件</string>
+    <string name="seconds">秒</string>
+   <string name ="alert_message">"有记事提醒,快去看看吧！"</string>
+   <string name="play_audio_text">点击播放语音</string>
+   <string name="playing_audio_text">正在播放语音</string>
+   
+   <string name="version_stationary_text">EMBA社交系统 </string>
+   <string name="input_limt">最多发送140个字符。</string>
+   <string name="shoucang_error">网络异常，收藏失败！</string>
+   <string name="cancel_shoucang_error">网络异常，取消收藏失败！</string>
+   <string name="message_delete_error">未读消息删除失败！</string>
+   <string name="no_message">没有未读消息！</string>
+   <string name="attention">仅支持Android4.1以上版本！</string>
+   <string name="version_alert">检测到您的Android版本低于4.1，会有部分功能无法使用！亲，是否要继续？</string>
+   <string name="chat_to">发送私信给 </string>
+   <string name="chang_avatar">修改头像</string>
+   <string name="camera">拍照上传</string>
+   <string name="upload_pic">上传照片</string>
+   <string name="update_avatar_ok">上传头像成功！</string>
+   <string name="audio">语音</string>
+</resources>
+

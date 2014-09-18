@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_update_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="2px"
+            android:layout_height="24dip"
+            android:layout_gravity="center"
+            android:src="@drawable/v5_0_1_flipper_head_separator" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_margin="5sp"
+        >
+
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40sp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/nickname"
+                    android:background="@drawable/edittext_selecter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="18"
+                    android:ems="10"
+                    android:hint="你的手机号码"
+                    android:maxLength="64"
+                    android:nextFocusDown="@+id/password"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <ImageView 
+                    android:id="@+id/nickname_right"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/register_input_right"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="80sp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:visibility="invisible" />
+                <EditText 
+                    android:id="@+id/password"
+                    android:background="@drawable/edittext_selecter"
+                    android:layout_width="0dp"
+                    android:layout_weight="18"
+                    android:layout_height="wrap_content"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/password_affirm"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:scrollHorizontally="true"
+                    android:maxLength="64"/>
+                <ImageView 
+                    android:id="@+id/password_right"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/register_input_right"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="120sp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:visibility="invisible" />
+                <EditText 
+                    android:id="@+id/password_affirm"
+                    android:background="@drawable/edittext_selecter"
+                    android:layout_width="0dp"
+                    android:layout_weight="18"
+                    android:layout_height="wrap_content"
+                    android:hint="确认密码"
+                    android:nextFocusDown="@+id/email"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:scrollHorizontally="true"
+                    android:textSize="14sp"
+                    android:maxLength="64"/>
+                <ImageView 
+                    android:id="@+id/password_affirm_right"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/register_input_right"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="300sp" 
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:visibility="invisible" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="10" >
+
+                    <ImageButton
+                        android:id="@+id/register_cancle"
+                        android:layout_width="80sp"
+                        android:layout_height="36sp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/meeting_join_maybe_btn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:text="取消"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:visibility="invisible" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="10" >
+
+                    <ImageButton
+                        android:id="@+id/register_update_button"
+                        android:layout_width="80sp"
+                        android:layout_height="36sp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/add_meeting_btn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:text="确定"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:visibility="invisible" />
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
